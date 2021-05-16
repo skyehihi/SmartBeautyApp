@@ -1,0 +1,187 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Appointment Schedule</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url("background-image.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="header-section-left">
+            <div class="site-logo">
+                <a href="page1-welcome.html" title="Welcome Page" rel="home">
+                    <img src="SmartBeauty Logo.png" alt="SmartBeauty Logo" title="SmartBeauty Logo" sizes="120%">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-section-middle">
+            <!--
+                <p><h1>SmartBeauty</h1></p>
+            -->
+
+            <p><h1>Be Smart. Be Beauty.</h1></p>
+        </div>
+
+        <div class="header-section-right">
+            <p align="right">
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-fb.png" alt="Facebook Logo" title="Facebook Logo" width="55px" height="55px">
+                </a>
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-instagram.png" alt="Instagram Logo" title="Instagram Logo" width="55px" height="55px">
+                </a>
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-Youtube.png" alt="Youtube Logo" title="Youtube Logo" width="55px" height="55px">
+                </a>
+            </p>
+
+
+        </div>
+
+    </div>
+    <div class="row">
+        <ul>
+            <li style="float:left"><a href="page1-welcome.html">Home</a></li>
+            <li style="float:left"><a href="#news">Blog</a></li>
+            <li style="float:left"><a href="#news">Partner</a></li>
+            <li style="float:right" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Welcome back, SalonOwner!</a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Change password</a>
+                    <a href="#">Sign out</a>
+                </div>
+            </li>
+            <li style="float:right" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Report</a>
+                <div class="dropdown-content">
+                    <a href="page4-operation-report.html">Operation Report</a>
+                    <a href="page5-client-report.html">Client Report</a>
+                </div>
+            </li>
+            <li style="float:right"><a href="page3-appointment-schedule.html">Schedule Management</a></li>
+        </ul>
+    </div>
+
+    <div class="row">
+        <div class="center">
+            <label for="start">Choose a date:</label>
+
+            <input type="date" id="today" name="Booking Date"
+                   value="2020-10-27"
+                   min="2018-12-31" max="2020-12-31">
+        </div>
+        <div class="center">
+            <br />
+            <br />
+            <p align="center"><h2>Calendar</h2></p>
+            <br />
+            <br />
+        </div>
+
+    </div>
+    <div style="margin-left: 5%; margin-right:5%" class="row">
+
+        <img src="page3-calendar.png" alt="Calendar" style="width:100%;>
+
+        <div class="row">
+            <div class="column">
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Customer Information</legend>
+                        <label for="ID">CustomerID:</label><br>
+                        <input type="text" id="ClientID" name="ID" value="0011"><br>
+                        <label for="lname">Last Name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Smith"><br>
+                        <label for="fname">First Name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="pnumber">Phone Number:</label><br>
+                        <input type="text" id="pnumber" name="Phone Number" value="878 123 4567"><br>
+                        <label for="bday">Birthday:</label><br><br>
+                        <input type="date" id="birthday" name="Birthday"><br><br>
+                        <label for="eaddress">Email Address:</label><br>
+                        <input type="text" id="eaddress" name="Email Address" value="johns@gmail.com"><br>
+                        <label for="Address">Address:</label><br>
+                        <input type="text" id="Address" name="Address" value="1234 Jordan St, Vancouver"><br>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Service Information</legend>
+                        <label for="bdate">Booking Date:</label><br><br>
+                        <input type="date" id="bdate" name="Booking Date"><br><br>
+                        <label for="Service">Service:</label><br>
+                        <input type="text" id="Service" name="Service" value="Cut"><br>
+                        <label for="StaffName">Staff Name:</label><br>
+                        <input type="text" id="StaffName" name="Staff name" value="Nick Knight"><br>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <form action="/action_page.php">
+                    <fieldset>
+                        <legend>Bill Information</legend>
+                        <label for="subtotal">Sub Total:</label><br>
+                        <input type="text" id="subtotal" name="subtotal" value="$45.00"><br>
+                        <label for="Tax">Tax:</label><br>
+                        <input type="text" id="Tax" name="Tax" value="$3.15"><br><br>
+                        <label for="total">Total:</label><br>
+                        <input type="text" id="total" name="total" value="$48.15"><br>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <form>
+                    <br><br>
+                    <button type="button" class="block">Payment</button><br><br>
+                    <button type="button" class="block">Cancel</button><br><br>
+                    <button type="button" class="block">Save</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="footer-section">
+            <div class="footer-section-1">
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Email: info@smartbeauty.ca <br />
+                        Phone: 123-456-7890 <br />
+                        Address: 3700 Willingdon Ave, Burnaby, BC
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section-2">
+                <li>Blog</li>
+                <li>Event</li>
+                <li>Career</li>
+            </div>
+            <div class="footer-section-3">
+                <img src="footer-livechat.png" width="150px" height="120px">
+                <img src="footer-phone.png" width="100px" height="100px">
+                <img src="footer-email.png" width="150px" height="150px">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

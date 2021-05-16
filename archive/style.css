@@ -1,0 +1,233 @@
+<style >
+body {
+    background-image: url("background-image.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    text-align: center;
+}
+
+.header-section-left {
+    width: 20%;
+    float: left;
+    border-collapse: collapse;
+}
+.header-section-middle {
+    width: 50%;
+    float: left;
+    border-collapse: collapse;
+}
+
+.header-section-right {
+    width: 20%;
+    position: relative;
+    float: right;
+    border-collapse: collapse;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .footer-section > div {
+        width: 33.33%;
+    }
+
+.container {
+    width: 50%;
+    margin: 0 auto; /* Center it */
+}
+
+    .container .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.25); /* Black background with 0.5 opacity */
+        width: 100%; /* Full width */
+        padding: 20px; /* Some padding */
+    }
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    color: #8800cc;
+
+    font-family: 'Georgia';
+    font-style: oblique;
+    font-size: 45px;
+}
+
+h2 {
+    color: #8800cc;
+    text-align: center;
+    font-family: 'Georgia';
+    font-style: oblique;
+    font-size: 30px;
+}
+
+h3 {
+    color: #8800cc;
+    font-family: 'Georgia';
+    font-size: 20px;
+}
+
+h4 {
+    color: #8800cc;
+    font-family: 'Georgia';
+    font-size: 16px;
+}
+
+p { font-size: 18px;
+    color: Black;
+}
+
+li {
+    font-size: 18px;
+    color: Black;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    text-align: center;
+}
+
+.block {
+    display: block;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #b485c7;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+figure {
+    display: table;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    font-size: 20px;
+    font-weight: bold;
+}
+.column {
+    float: left;
+    padding: 15px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+fieldset {
+    background-color: #edd8ed;
+}
+
+legend {
+    background-color: #b485c7;
+    color: white;
+    padding: 5px 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b485c7;
+}
+
+li {
+
+}
+
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: #edd8ed;
+        }
+
+    li.dropdown {
+        display: inline-block;
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #b485c7;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #edd8ed;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+</style >

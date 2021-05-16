@@ -1,0 +1,434 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Client Report</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url("background-image.png");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+
+        <div class="header-section-left">
+            <div class="site-logo">
+                <a href="page1-welcome.html" title="Welcome Page" rel="home">
+                    <img src="SmartBeauty Logo.png" alt="SmartBeauty Logo" title="SmartBeauty Logo">
+                </a>
+            </div>
+        </div>
+
+        <div class="header-section-middle">
+            <!--
+                <p><h1>SmartBeauty</h1></p>
+            -->
+
+            <p margin-top: "200px"><h1>Be Smart. Be Beauty.</h1></p>
+        </div>
+
+        <div class="header-section-right">
+            <p align="right">
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-fb.png" alt="Facebook Logo" title="Facebook Logo" width="55px" height="55px">
+                </a>
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-instagram.png" alt="Instagram Logo" title="Instagram Logo" width="55px" height="55px">
+                </a>
+                <a href="URL TO facebook" title="YOUR SITE NAME" rel="home">
+                    <img src="header-Youtube.png" alt="Youtube Logo" title="Youtube Logo" width="55px" height="55px">
+                </a>
+            </p>
+
+
+        </div>
+
+    </div>
+    <div class="row">
+        <ul>
+            <li style="float:left"><a href="page1-welcome.html">Home</a></li>
+            <li style="float:left"><a href="#news">Blog</a></li>
+            <li style="float:left"><a href="#news">Partner</a></li>
+            <li style="float:right" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Welcome back, SalonOwner!</a>
+                <div class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Change password</a>
+                    <a href="#">Sign out</a>
+                </div>
+            </li>
+            <li style="float:right" class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Report</a>
+                <div class="dropdown-content">
+                    <a href="page4-operation-report.html">Operation Report</a>
+                    <a href="page5-client-report.html">Client Report</a>
+                </div>
+            </li>
+            <li style="float:right"><a href="page3-appointment-schedule.html">Schedule Management</a></li>
+        </ul>
+    </div>
+    <div style="margin-left: 5%; margin-right:5%" class="row">
+
+        <p align=center><h2>Client Report</h2>
+
+
+        <p style="font-size:20px"><b>Reporting Date:</b></p>
+        </p><select name="Date">
+            <option value="Nov 4, 2020">Nov 1, 2020</option>
+            <option value="Nov 3, 2020">Nov 2, 2020</option>
+            <option value="Nov 2, 2020">Nov 3, 2020</option>
+            <option value="Nov 1, 2020">Nov 4, 2020</option>
+            <option value="...">...</option>
+
+        </select>
+
+
+
+        <div class="row">
+            <p>Filter:</p>
+            <div class="column">
+                <button type="button">Customer Last Name</button>
+            </div>
+
+            <div class="column">
+                <button type="button">Customer First Name</button>
+            </div>
+
+            <div class="column">
+                <button type="button">Customer Phone Number</button>
+            </div>
+
+            <div class="column">
+                <button type="button">Customer Birthday</button>
+            </div>
+
+            <div class="column">
+                <div class="searchbox">
+                    <form>
+                        <input type="Filter" placeholder="Search..." name="search">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="searchbox">
+                    <button type="button" style="font-size:15px" class="block">Export to Excel File</button>
+                </div>
+            </div>
+        </div>
+
+        <fieldset>
+           
+
+            <table style="width:100%">
+                <tr>
+                    <th>ClientID</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Phone Number</th>
+                    <th>Address</th>
+                    <th>Email</th>
+                    <th>BOD</th>
+                    <th>Last coming date</th>
+                    <th>Regular services</th>
+                    <th>Staff reference</th>
+                    <th>Promotion email</th>
+                    <th>Reminder email</th>
+                </tr>
+                <tr>
+                    <td>A01</td>
+                    <td>Nguyen</td>
+                    <td>Trang</td>
+                    <td>999 999 9999</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>trangnguyen@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Nick</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A02</td>
+                    <td>Nguyen</td>
+                    <td>Skye</td>
+                    <td>999 999 9998</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>skyenguyen@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Jane</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A03</td>
+                    <td>Ono</td>
+                    <td>Hiroko</td>
+                    <td>999 999 9997</td>
+                    <td>2019 Main Street</td>
+                    <td>hirokoono@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Ashley</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A04</td>
+                    <td>Kardashian</td>
+                    <td>Kim</td>
+                    <td>999 999 9996</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>kim@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Wayne</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A05</td>
+                    <td>Jolie</td>
+                    <td>Angelina</td>
+                    <td>999 999 9995</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>angelina@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Nancy</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A06</td>
+                    <td>Swift</td>
+                    <td>Taylor</td>
+                    <td>999 999 9994</td>
+                    <td>2019 Main Street</td>
+                    <td>taylor@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Mary</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+
+                <tr>
+                    <td>A07</td>
+                    <td>Bieber</td>
+                    <td>Justin</td>
+                    <td>999 999 9993</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>Justin@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Nick</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A08</td>
+                    <td>Perry</td>
+                    <td>Katy</td>
+                    <td>999 999 9992</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>katy@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Jane</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A09</td>
+                    <td>Cruise</td>
+                    <td>Tom</td>
+                    <td>999 999 9991</td>
+                    <td>2019 Main Street</td>
+                    <td>Tom@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Ashley</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                <tr>
+                    <td>A010</td>
+                    <td>Beckham</td>
+                    <td>David</td>
+                    <td>999 999 9990</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>davidbeckham@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Wayne</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A011</td>
+                    <td>Deep</td>
+                    <td>Johny</td>
+                    <td>999 999 9989</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>johnydeep@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Nancy</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A012</td>
+                    <td>Hanks</td>
+                    <td>Tom</td>
+                    <td>999 999 9987</td>
+                    <td>2019 Main Street</td>
+                    <td>TomHanks@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Mary</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+
+                <tr>
+                    <td>A013</td>
+                    <td>Spears</td>
+                    <td>Britney</td>
+                    <td>999 999 9986</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>britneyspears@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Nick</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A014</td>
+                    <td>Smith</td>
+                    <td>Will</td>
+                    <td>999 999 9985</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>willsmithn@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Jane</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A015</td>
+                    <td>Affleck</td>
+                    <td>Ben</td>
+                    <td>999 999 9984</td>
+                    <td>2019 Main Street</td>
+                    <td>benaffleck@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Ashley</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+
+                <tr>
+                    <td>A016</td>
+                    <td>Pitt</td>
+                    <td>Brad</td>
+                    <td>999 999 9983</td>
+                    <td>2333 Silver Avenue</td>
+                    <td>Bradpitt@gmail.com</td>
+                    <td>02-21-1995</td>
+                    <td>12 Oct, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Wayne</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A017</td>
+                    <td>Minaj</td>
+                    <td>Nicki</td>
+                    <td>999 999 9982</td>
+                    <td>1789 Willingdon Avenue</td>
+                    <td>nickimainaj@gmail.com</td>
+                    <td>11-07-1993</td>
+                    <td>10 Sep, 2020</td>
+                    <td>Dying hair</td>
+                    <td>Nancy</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+                <tr>
+                    <td>A018</td>
+                    <td>Clinton</td>
+                    <td>Bill</td>
+                    <td>999 999 9981</td>
+                    <td>2019 Main Street</td>
+                    <td>billclinton@gmail.com</td>
+                    <td>08-14-1989</td>
+                    <td>27 Aug, 2020</td>
+                    <td>Hair Cut</td>
+                    <td>Marry</td>
+                    <td><button type="button">Send email</button></td>
+                    <td><button type="button">Send email</button></td>
+                </tr>
+
+            </table>
+        </fieldset>
+        <br />
+        <br />
+        <br />
+
+    </div>
+    <div class="row">
+        <div class="footer-section">
+            <div class="footer-section-1">
+                <div class="contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Email: info@smartbeauty.ca <br />
+                        Phone: 123-456-7890 <br />
+                        Address: 3700 Willingdon Ave, Burnaby, BC
+                    </p>
+                </div>
+            </div>
+            <div class="footer-section-2">
+                <li>Blog</li>
+                <li>Blog</li>
+                <li>Event</li>
+                <li>Career</li>
+            </div>
+            <div class="footer-section-3">
+                <img src="footer-livechat.png" width="130px" height="100px">
+                <img src="footer-phone.png" width="100px" height="90px">
+                <img src="footer-email.png" width="130px" height="130px">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

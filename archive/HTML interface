@@ -1,0 +1,154 @@
+/*Interface 1: Home page*/
+
+
+/*Interface 2: Customer booking*/
+
+
+
+/*Interface 3: Appointment Schedule*/
+
+<!DOCTYPE html>
+
+<html>
+<link rel="HTMLstylesheet" href="HTMLstyle.css">
+<head>
+
+    <title>Smart Beauty</title>
+
+</head>
+
+<body>
+<a href="url">User Name</a>
+<button type="button">Appointment Schedule</button>
+<button type="button">Operation Report</button>
+<button type="button">Client Report</button>
+
+<p>Select staff name</p>
+
+<select name = "StaffName">
+	<option value = "Skye">Skye</option>
+	<option value = "Trang">Trang</option>
+	<option value = "Hiroko">Hiroko</option>
+</select>
+
+<h3>Calendar</h3>
+<form action="/action_page.php">
+  <label for="appointment">Appointment</label>
+  <input type="date" id="appointment" name="appointment">
+</form>
+
+<h3>Customer Information</h3>
+
+<form action="somescript.php" method="post">
+
+<p><input name="ClientID" value="Client ID:"></p>
+<p><input name="LastName" value="Last Name:"></p>
+<p><input name="FirstName" value="First Name:"></p>
+<p><input name="PhoneNumber" value="Phone Number:"></p>
+<p><input name="EmailAddress" value="Email Address:"></p>
+<p><input name="Address" value="Address:"></p>
+<p><input name="Date" value="Last Date:"></p>
+<p><input name="Service" value="Last Service:"></p>
+<p><input name="StaffName" value="Staff Name:"></p>
+
+<p><input name="BillInfo" value="Bill Information:"></p>
+
+</form>
+
+<button type="button">Payment</button>
+<button type="button">Cancel</button>
+<button type="button">Save</button>
+
+<body>
+
+</body>
+
+</html>
+
+/*Interface 4: Business Report*/
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<img src="logo.jpg" alt ="BeautySmart logo">
+
+<P align=right><button type="button">Appointment Schedule</button></P>
+<P align=right><button type="button">Operation Report</button></P>
+<P align=right><button type="button">Client Report</button></P>
+
+<title>style="text-align:center;">Business Report</title>
+
+</head>
+
+<body>
+
+
+/*Interface 5: Client Report*/
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<img src="logo.jpg" alt ="BeautySmart logo">
+
+<P align=right><button type="button">Appointment Schedule</button></P>
+<P align=right><button type="button">Operation Report</button></P>
+<P align=right><button type="button">Client Report</button></P>
+
+<title>style="text-align:center;">Business Report</title>
+
+</head>
+
+<body>
+
+<select name = "Date Range" multiple size = "6">
+	<option value = "Nov 1, 2020">Nov 1, 2020</option>
+	<option value = "Nov 2, 2020">Nov 2, 2020</option>
+	<option value = "Nov 3, 2020">Nov 3, 2020</option>
+	<option value = "Nov 4, 2020">Nov 4, 2020</option>
+	<option value = "...">...</option>
+</select>
+	
+/*Search bar for customer name created and add CSS later*/
+<div class="searchbox">
+<form>
+	<input type="Customer name" placeholder ="Search..." name="search">
+	<button type ="submit">Submit</button>
+</form>
+</div>
+
+<table>
+    <tr>
+        <td>ClientID</td>
+        <td>Last Name</td>
+        <td>First Name</td>
+	<td>Phone Number</td>
+        <td>Address</td>
+        <td>Email</td>
+	<td>Last coming date</td>
+        <td>Regular services</td>
+        <td>Staff reference</td>
+        <td>Promotion email</td>
+        <td>Reminder email</td>
+    </tr>
+    <tr>
+        <td>Row 2, cell 1</td>
+        <td>Row 2, cell 2</td>
+        <td>Row 2, cell 3</td>
+	    <td>Row 2, cell 1</td>
+        <td>Row 2, cell 2</td>
+        <td>Row 2, cell 3</td>
+	    <td>Row 2, cell 1</td>
+        <td>Row 2, cell 2</td>
+        <td>Row 2, cell 3</td>
+	    <td>input type="checkbox"/>&nbsp;</td> /*add checkbox*/
+        <td>input type="checkbox"/>&nbsp;</td>      
+    </tr>    
+</table>
+</body>
+</html>
