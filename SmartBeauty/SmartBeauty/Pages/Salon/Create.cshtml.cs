@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SmartBeauty.Data;
 using SmartBeauty.Models;
+using System.Security.Claims;
 
 namespace SmartBeauty.Pages.Salon
 {
@@ -21,6 +22,13 @@ namespace SmartBeauty.Pages.Salon
 
         public IActionResult OnGet()
         {
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (userId != "ec0c0a43-bcfb-41e9-a046-3fb0a8c4fac0")
+            {
+                return Redirect("~/Identity/Account/Login");
+            }
+
             return Page();
         }
 
@@ -35,7 +43,14 @@ namespace SmartBeauty.Pages.Salon
                 return Page();
             }
 
-            _context.Salon.Add(Salon);
+            var emptySalon = new SmartBeauty.Models.Salon();
+
+            if (await TryUpdateModelAsync<SmartBeauty.Models.Salon>(
+                emptySalon,
+                "salon",// Prefix for form value.
+                s => s.SalonID, s => s.UserName, s => s.SalonName, s => s.Email, s => s.Address, s => s.PhoneNumber, s => s.IdentityID))
+
+                _context.Salon.Add(Salon);
             await _context.SaveChangesAsync();
 
             return RedirectToPage("./Index");

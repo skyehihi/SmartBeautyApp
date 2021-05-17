@@ -11,6 +11,9 @@ namespace SmartBeauty.Models
 
     {
         public string SalonID { get; set; }
+        
+        [StringLength(450)]
+        public string IdentityID { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$")]
         [Required]
